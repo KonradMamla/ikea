@@ -2,3 +2,24 @@ cypress/videos/
 cypress/screenshots/
 node_modules/
 allure-report/
+allure-results/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# Editor settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+.env.*.local
