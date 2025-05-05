@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": "./",
+    "types": ["cypress"],
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}
