@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Cypress IKEA Automation Tests
 
@@ -147,3 +148,6 @@ This project is licensed under the **MIT License** – see the [LICENSE.md](LICE
 - Expansion of test coverage for **user authentication** and **payment gateways**.
 
 ---
+=======
+# ikea
+>>>>>>> 2cd223a24604e3262f367ab46ab79d501239b916
