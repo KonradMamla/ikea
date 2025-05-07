@@ -14,8 +14,8 @@ Test scenarios are written in a clear, action-driven style that simulates real *
 - [Consent Cookie Setup](#consent-cookie-setup)
 - [Running Tests](#running-tests)
 - [Test Scenarios](#test-scenarios)
-- [Manual Test Cases](#-manual-test-cases)
-- [Future Improvements](#-future-improvements)
+- [Manual Test Cases](#manual-test-cases)
+- [Future Improvements](#future-improvements)
 - [Authors](#authors)
 - [License](#license)
 
@@ -147,7 +147,7 @@ npx cypress run
 ## Manual Test Cases
 
 Manual test cases covering functional flows are available in:  
- [`docs/manual-test-cases.md`](./docs/manual-test-cases.md)
+[`docs/manual-test-cases/`](./docs/manual-test-cases/)
 
 Includes:
 
