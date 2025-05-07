@@ -14,7 +14,7 @@ export default defineConfig({
         log(message) {
           console.log(message);
           return null;
-        },
+        }
       });
 
       return config;
@@ -25,11 +25,11 @@ export default defineConfig({
     video: true,
     retries: {
       runMode: 2,
-      openMode: 0,
+      openMode: 0
     },
     env: {
       allure: true,
-      allureResultsPath: 'allure-results',
-    },
-  },
+      allureResultsPath: 'allure-results'
+    }
+  }
 });

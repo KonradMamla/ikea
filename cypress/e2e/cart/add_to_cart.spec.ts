@@ -2,31 +2,30 @@ import ProductPage from '../../pages/ProductPage';
 import CartPage from '../../pages/CartPage';
 import products from '../../fixtures/products';
 
-describe('Cart and Checkout - Adding a product to the cart', () => {
+describe('Cart and Checkout – product management and order placement', () => {
   beforeEach(() => {
-    ProductPage.goToProductPage().clickAcceptCookiesButton();
+    cy.setConsentCookies();
+    ProductPage.goToProductPage()
   });
 
-  products.forEach(
-    ({ productID, productName, productDescription, expectedPrice }) => {
-      it(`Should add ${productName} ${productDescription} to the cart and verify its price`, () => {
+  products.forEach(({ productID, productName, productDescription, expectedPrice }) => {
+      it(`Should add ${productName} ${productDescription} by productID to the cart and verify its price`, () => {
         cy.allure()
-          .description(
-            'Test verifies the process of adding a product to the cart and ensures its price are correct.',
-          )
+          .description('Verify that a product added by productID appears in the cart with correct price.')
           .tag('cart', 'checkout')
           .severity('critical');
 
-        ProductPage.searchProductByID(productID)
-          .selectProductByName(productName)
+        ProductPage
+          .searchProductByID(productID)
           .verifyOnlyProductsWithIDAreVisible(productID)
+          .selectProductByID(productID)
           .clickAddToCartButton()
           .clickGoToCartButton();
 
-        CartPage.verifyOnlyProductWithIDIsVisible(productID).verifySummaryPrice(
-          expectedPrice,
-        );
+        CartPage
+          .verifyOnlyProductWithIDIsVisible(productID)
+          .verifySummaryPrice(expectedPrice);
       });
-    },
+    }
   );
 });

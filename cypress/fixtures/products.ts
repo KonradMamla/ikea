@@ -1,12 +1,12 @@
 const products = [
   {
-    productID: 'S09545271',
+    productID: 's09545271',
     productName: 'VIMLE',
     productDescription: 'Sofa 2-osobowa rozkładana',
-    expectedPrice: '3399',
+    expectedPrice: '3399'
   },
   {
-    productID: 'S79545277',
+    productID: 's79545277',
     productName: 'VIMLE',
     productDescription: 'Rozkładana sofa 3-osobowa',
     expectedPrice: '4299',
