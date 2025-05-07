@@ -147,7 +147,7 @@ npx cypress run
 ## Manual Test Cases
 
 Manual test cases covering functional flows are available in:  
-[`docs/manual-test-cases/`](./docs/manual-test-cases/)
+[`docs/manual-test-cases/index.md`](./docs/manual-test-cases/index.md)
 
 Includes:
 
