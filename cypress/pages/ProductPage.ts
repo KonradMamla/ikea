@@ -26,18 +26,14 @@ class ProductPage {
     return cy.get('span.plp-price-module__product-name').contains(productName);
   }
 
-  private PRODUCT_DESCRIPTION(productDescription: string) {
-    return cy.get('span.plp-price-module__description').contains(productDescription);
-  }
-
   private ADD_TO_CART_BUTTON() {
-    return cy.get('button[aria-label="Dodaj do koszyka"]').first();
+    return cy.contains('button', 'Dodaj do koszyka');
   }
 
   private GO_TO_CART_BUTTON() {
-    return cy.get('button[aria-label="Przejdź do koszyka"]');
+    return cy.get('button[aria-label="Przejdź do koszyka"]', { timeout: 10000 });
   }
-
+  
   goToProductPage() {
     cy.visit('/');
     this.IKEA_LOGO_BUTTON().should('exist');

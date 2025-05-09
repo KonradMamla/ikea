@@ -1,0 +1,108 @@
+{
+        "empty": false,
+        "cartId": "04c24838-0f0a-327e-9528-39e858c4e5f2",
+        "employeeDiscountConsent": false,
+        "customer": {
+          "type": "PRIVATE",
+          "familyLoyalty": false
+        },
+        "groups": [
+          {
+            "name": "DEFAULT",
+            "items": [
+              {
+                "itemNo": "s19241207",
+                "quantity": 1.0,
+                "shoppingProfile": "ONLINE",
+                "childItems": [],
+                "info": {
+                  "name": "SONGESAND",
+                  "category": "Rama łóżka z 2 pojemnikami",
+                  "formattedItemNo": "192.412.07",
+                  "isAssemblyRequired": true,
+                  "productTags": [],
+                  "unitCode": "PIECE",
+                  "materials": [],
+                  "measurements": [
+                    {
+                      "imperial": "55 1/8x78 3/4 \"",
+                      "metric": "140x200 cm"
+                    }
+                  ],
+                  "mainProductImages": [
+                    {
+                      "fileMimeType": "image/jpeg",
+                      "width": "40",
+                      "height": "40",
+                      "quality": "S1",
+                      "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s1.jpg"
+                    },
+                    {
+                      "fileMimeType": "image/jpeg",
+                      "width": "110",
+                      "height": "110",
+                      "quality": "S2",
+                      "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s2.jpg"
+                    },
+                    {
+                      "fileMimeType": "image/jpeg",
+                      "width": "250",
+                      "height": "250",
+                      "quality": "S3",
+                      "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s3.jpg"
+                    },
+                    {
+                      "fileMimeType": "image/jpeg",
+                      "width": "500",
+                      "height": "500",
+                      "quality": "S4",
+                      "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s4.jpg"
+                    },
+                    {
+                      "fileMimeType": "image/jpeg",
+                      "width": "2000",
+                      "height": "2000",
+                      "quality": "S5",
+                      "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s5.jpg"
+                    }
+                  ]
+                }
+              }
+            ],
+            "plans": [],
+            "circularItems": [],
+            "price": {
+              "totalPrice": {
+                "current": {
+                  "inclTax": 799.0,
+                  "exclTax": 649.59,
+                  "tax": 149.41
+                }
+              }
+            },
+            "quantity": 1
+          }
+        ],
+        "discountCodes": [],
+        "fulfilment": null,
+        "deliveryPrices": null,
+        "price": {
+          "totalPrice": {
+            "current": {
+              "inclTax": 799.0,
+              "exclTax": 649.59,
+              "tax": 149.41
+            }
+          },
+          "taxSummaries": [
+            {
+              "taxType": "VAT",
+              "totalTaxAmount": 149.41
+            }
+          ],
+          "currency": "PLN"
+        },
+        "services": {},
+        "quantity": 1.0,
+        "updatedAt": "2025-05-07T18:45:00.000Z"
+      }

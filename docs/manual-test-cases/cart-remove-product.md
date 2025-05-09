@@ -3,18 +3,19 @@
 **Test ID:** TC-CART-002  
 **Priority:** critical  
 **Labels:** cart, checkout  
-**Status:** Not Automated  
+**Status:** Automated  
 
 ---
 
 ### Description  
-This test verifies that a user can remove a product from the cart, and that the cart reflects an empty state afterward.
+This test verifies that a user can remove a product from the cart and that the cart reflects an empty state afterward.
+
 ---
 
 ### Preconditions  
 - User is not logged in  
 - Cookie consent has already been accepted (see `consent.json`)  
-- The cart contains one product (added beforehand)
+- The cart contains one product (mocked or added beforehand)
 
 ---
 
@@ -22,23 +23,20 @@ This test verifies that a user can remove a product from the cart, and that the 
 
 | Field        | Value     |
 |--------------|-----------|
-| Product ID   | s09545271 |
-| Product Name | VIMLE     |
+| Product ID   | 19241207  |
+| Product Name | SONGESAND |
 
 ---
 
 ### Steps  
 
-1. **Open** the IKEA homepage  
-   - **Expected result:** Homepage loads correctly  
+1. **Open** the IKEA cart page (`/shoppingcart/`)  
+   - **Expected result:** Cart page loads correctly with 1 product  
 
-2. **Click** the **"Cart"** icon or go directly to the cart page  
-   - **Expected result:** Cart page displays with 1 product  
-
-3. **Click** the **"Trash"** button next to the product  
+2. **Click** the **"Trash"** button next to the product  
    - **Expected result:** Product is removed from the cart  
 
-4. **Verify** the cart is empty  
-   - **Expected result:** Cart displays an empty state 
+3. **Verify** the cart is empty  
+   - **Expected result:** Cart displays an empty state  
 
 ---

@@ -4,6 +4,9 @@ declare namespace Cypress {
   interface Chainable {
     allure(): AllureAPI;
     setConsentCookies(): Chainable<void>;
+    mockCartWithOneProduct(): Chainable<void>;
+    mockRemoveItemFromCart(): Chainable<void>;
+    mockCartEmpty(): Chainable<void>;
   }
 
   interface AllureAPI {

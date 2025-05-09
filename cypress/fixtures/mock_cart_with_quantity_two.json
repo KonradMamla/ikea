@@ -1,0 +1,571 @@
+{
+        "empty": false,
+        "cartId": "04c24838-0f0a-327e-9528-39e858c4e5f2",
+        "employeeDiscountConsent": false,
+        "customer": {
+            "type": "PRIVATE",
+            "familyLoyalty": false
+        },
+        "groups": [
+            {
+                "name": "DEFAULT",
+                "items": [
+                    {
+                        "itemNo": "s19241207",
+                        "quantity": 2.0,
+                        "shoppingProfile": "ONLINE",
+                        "childItems": [
+                            {
+                                "itemNo": "30372503",
+                                "quantity": 2.0,
+                                "info": {
+                                    "name": "SONGESAND",
+                                    "category": "rama łóżka",
+                                    "formattedItemNo": "303.725.03",
+                                    "isAssemblyRequired": true,
+                                    "productTags": [],
+                                    "unitCode": "PIECE",
+                                    "materials": [
+                                        {
+                                            "productType": null,
+                                            "parts": [
+                                                {
+                                                    "name": "Noga/ Szyna górna:",
+                                                    "material": "Płyta pilśniowa, Folia papierowa, Krawędź z tworzywa sztucznego"
+                                                },
+                                                {
+                                                    "name": "Wypełnienie końcowe łóżka/ Szyna/ Boki łóżka:",
+                                                    "material": "Płyta wiórowa, Folia papierowa, Krawędź z tworzywa sztucznego"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "measurements": [
+                                        {
+                                            "imperial": "55 1/8x78 3/4 \"",
+                                            "metric": "140x200 cm"
+                                        }
+                                    ],
+                                    "mainProductImages": [
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "40",
+                                            "height": "40",
+                                            "quality": "S1",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-bialy__0638583_pe699000_s1.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "110",
+                                            "height": "110",
+                                            "quality": "S2",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-bialy__0638583_pe699000_s2.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "250",
+                                            "height": "250",
+                                            "quality": "S3",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-bialy__0638583_pe699000_s3.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "500",
+                                            "height": "500",
+                                            "quality": "S4",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-bialy__0638583_pe699000_s4.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "2000",
+                                            "height": "2000",
+                                            "quality": "S5",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-bialy__0638583_pe699000_s5.jpg"
+                                        }
+                                    ],
+                                    "businessStructure": {
+                                        "productAreaNo": "0521",
+                                        "productAreaName": "Bed frames and beds with non upholstered headboards",
+                                        "productRangeAreaNo": "052",
+                                        "productRangeAreaName": "Beds",
+                                        "homeFurnishingBusinessNo": "05",
+                                        "homeFurnishingBusinessName": "Beds & Mattresses"
+                                    },
+                                    "globalName": "SONGESAND",
+                                    "description": "biały",
+                                    "energyEfficiencySymbol": null,
+                                    "energyLabel": null,
+                                    "displayUnit": null,
+                                    "waterSymbol": null,
+                                    "waterLabel": null,
+                                    "numberOfPackages": 2,
+                                    "technicalDetails": {
+                                        "compliance": [],
+                                        "lawLabels": []
+                                    },
+                                    "riskAcknowledgementNeeded": false
+                                }
+                            },
+                            {
+                                "itemNo": "30372536",
+                                "quantity": 2.0,
+                                "info": {
+                                    "name": "SONGESAND",
+                                    "category": "pojemnik na pościel, 2 szt.",
+                                    "formattedItemNo": "303.725.36",
+                                    "isAssemblyRequired": true,
+                                    "productTags": [],
+                                    "unitCode": "PIECE",
+                                    "materials": [
+                                        {
+                                            "productType": null,
+                                            "parts": [
+                                                {
+                                                    "name": "Przód szuflady/ Tył szuflady/ Boki szuflady/ Rozdzielenie/ Szyna:",
+                                                    "material": "Płyta wiórowa, Folia papierowa, Krawędź z tworzywa sztucznego"
+                                                },
+                                                {
+                                                    "name": "Dno szuflady:",
+                                                    "material": "Płyta pilśniowa, farba, Folia papierowa"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "measurements": [
+                                        {
+                                            "imperial": "78 3/4 \"",
+                                            "metric": "200 cm"
+                                        }
+                                    ],
+                                    "mainProductImages": [
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "40",
+                                            "height": "40",
+                                            "quality": "S1",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-pojemnik-na-posciel-2-szt-bialy__0636232_pe697744_s1.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "110",
+                                            "height": "110",
+                                            "quality": "S2",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-pojemnik-na-posciel-2-szt-bialy__0636232_pe697744_s2.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "250",
+                                            "height": "250",
+                                            "quality": "S3",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-pojemnik-na-posciel-2-szt-bialy__0636232_pe697744_s3.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "500",
+                                            "height": "500",
+                                            "quality": "S4",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-pojemnik-na-posciel-2-szt-bialy__0636232_pe697744_s4.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "2000",
+                                            "height": "2000",
+                                            "quality": "S5",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/songesand-pojemnik-na-posciel-2-szt-bialy__0636232_pe697744_s5.jpg"
+                                        }
+                                    ],
+                                    "businessStructure": {
+                                        "productAreaNo": "0521",
+                                        "productAreaName": "Bed frames and beds with non upholstered headboards",
+                                        "productRangeAreaNo": "052",
+                                        "productRangeAreaName": "Beds",
+                                        "homeFurnishingBusinessNo": "05",
+                                        "homeFurnishingBusinessName": "Beds & Mattresses"
+                                    },
+                                    "globalName": "SONGESAND",
+                                    "description": "biały",
+                                    "energyEfficiencySymbol": null,
+                                    "energyLabel": null,
+                                    "displayUnit": null,
+                                    "waterSymbol": null,
+                                    "waterLabel": null,
+                                    "numberOfPackages": 1,
+                                    "technicalDetails": {
+                                        "compliance": [],
+                                        "lawLabels": []
+                                    },
+                                    "riskAcknowledgementNeeded": false
+                                }
+                            },
+                            {
+                                "itemNo": "90124534",
+                                "quantity": 2.0,
+                                "info": {
+                                    "name": "SKORVA",
+                                    "category": "belka",
+                                    "formattedItemNo": "901.245.34",
+                                    "isAssemblyRequired": true,
+                                    "productTags": [],
+                                    "unitCode": "PIECE",
+                                    "materials": [
+                                        {
+                                            "productType": null,
+                                            "parts": [
+                                                {
+                                                    "name": null,
+                                                    "material": "Stal Galwanizowana"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "measurements": [],
+                                    "mainProductImages": [
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "40",
+                                            "height": "40",
+                                            "quality": "S1",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/skorva-belka-galwanizowano__0636189_pe697703_s1.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "110",
+                                            "height": "110",
+                                            "quality": "S2",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/skorva-belka-galwanizowano__0636189_pe697703_s2.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "250",
+                                            "height": "250",
+                                            "quality": "S3",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/skorva-belka-galwanizowano__0636189_pe697703_s3.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "500",
+                                            "height": "500",
+                                            "quality": "S4",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/skorva-belka-galwanizowano__0636189_pe697703_s4.jpg"
+                                        },
+                                        {
+                                            "fileMimeType": "image/jpeg",
+                                            "width": "2000",
+                                            "height": "2000",
+                                            "quality": "S5",
+                                            "url": "https://www.ikea.com/pl/pl/images/products/skorva-belka-galwanizowano__0636189_pe697703_s5.jpg"
+                                        }
+                                    ],
+                                    "businessStructure": {
+                                        "productAreaNo": "0523",
+                                        "productAreaName": "Beds others",
+                                        "productRangeAreaNo": "052",
+                                        "productRangeAreaName": "Beds",
+                                        "homeFurnishingBusinessNo": "05",
+                                        "homeFurnishingBusinessName": "Beds & Mattresses"
+                                    },
+                                    "globalName": "SKORVA",
+                                    "description": "galwanizowano",
+                                    "energyEfficiencySymbol": null,
+                                    "energyLabel": null,
+                                    "displayUnit": null,
+                                    "waterSymbol": null,
+                                    "waterLabel": null,
+                                    "numberOfPackages": 1,
+                                    "technicalDetails": {
+                                        "compliance": [],
+                                        "lawLabels": []
+                                    },
+                                    "riskAcknowledgementNeeded": false
+                                }
+                            }
+                        ],
+                        "maxQuantity": null,
+                        "assemblyService": {
+                            "serviceItemNo": "SGR50000960",
+                            "selectedItemQuantityForAssembly": null,
+                            "price": null,
+                            "isAvailable": true,
+                            "consents": []
+                        },
+                        "installationService": {
+                            "selectedItemQuantityForInstallation": null,
+                            "price": null,
+                            "isAvailable": false,
+                            "consents": []
+                        },
+                        "itemType": "SPR",
+                        "metadata": null,
+                        "info": {
+                            "name": "SONGESAND",
+                            "category": "Rama łóżka z 2 pojemnikami",
+                            "formattedItemNo": "192.412.07",
+                            "isAssemblyRequired": true,
+                            "productTags": [],
+                            "unitCode": "PIECE",
+                            "materials": [
+                                {
+                                    "productType": "Rama łóżka",
+                                    "parts": [
+                                        {
+                                            "name": "Noga/ Szyna górna:",
+                                            "material": "Płyta pilśniowa, Folia papierowa, Krawędź z tworzywa sztucznego"
+                                        },
+                                        {
+                                            "name": "Wypełnienie końcowe łóżka/ Szyna/ Boki łóżka:",
+                                            "material": "Płyta wiórowa, Folia papierowa, Krawędź z tworzywa sztucznego"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "productType": "Pojemnik na pościel, 2 szt.",
+                                    "parts": [
+                                        {
+                                            "name": "Przód szuflady/ Tył szuflady/ Boki szuflady/ Rozdzielenie/ Szyna:",
+                                            "material": "Płyta wiórowa, Folia papierowa, Krawędź z tworzywa sztucznego"
+                                        },
+                                        {
+                                            "name": "Dno szuflady:",
+                                            "material": "Płyta pilśniowa, farba, Folia papierowa"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "productType": "Belka",
+                                    "parts": [
+                                        {
+                                            "name": null,
+                                            "material": "Stal Galwanizowana"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "measurements": [
+                                {
+                                    "imperial": "55 1/8x78 3/4 \"",
+                                    "metric": "140x200 cm"
+                                }
+                            ],
+                            "mainProductImages": [
+                                {
+                                    "fileMimeType": "image/jpeg",
+                                    "width": "40",
+                                    "height": "40",
+                                    "quality": "S1",
+                                    "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s1.jpg"
+                                },
+                                {
+                                    "fileMimeType": "image/jpeg",
+                                    "width": "110",
+                                    "height": "110",
+                                    "quality": "S2",
+                                    "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s2.jpg"
+                                },
+                                {
+                                    "fileMimeType": "image/jpeg",
+                                    "width": "250",
+                                    "height": "250",
+                                    "quality": "S3",
+                                    "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s3.jpg"
+                                },
+                                {
+                                    "fileMimeType": "image/jpeg",
+                                    "width": "500",
+                                    "height": "500",
+                                    "quality": "S4",
+                                    "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s4.jpg"
+                                },
+                                {
+                                    "fileMimeType": "image/jpeg",
+                                    "width": "2000",
+                                    "height": "2000",
+                                    "quality": "S5",
+                                    "url": "https://www.ikea.com/pl/pl/images/products/songesand-rama-lozka-z-2-pojemnikami-bialy__1151019_pe884760_s5.jpg"
+                                }
+                            ],
+                            "businessStructure": {
+                                "productAreaNo": "0521",
+                                "productAreaName": "Bed frames and beds with non upholstered headboards",
+                                "productRangeAreaNo": "052",
+                                "productRangeAreaName": "Beds",
+                                "homeFurnishingBusinessNo": "05",
+                                "homeFurnishingBusinessName": "Beds & Mattresses"
+                            },
+                            "globalName": "SONGESAND",
+                            "description": "biały",
+                            "energyEfficiencySymbol": null,
+                            "energyLabel": null,
+                            "displayUnit": null,
+                            "waterSymbol": null,
+                            "waterLabel": null,
+                            "numberOfPackages": 4,
+                            "technicalDetails": {
+                                "compliance": [],
+                                "lawLabels": []
+                            },
+                            "riskAcknowledgementNeeded": false
+                        },
+                        "fees": {
+                            "weee": null,
+                            "eco": null
+                        },
+                        "price": {
+                            "unitPrice": {
+                                "current": {
+                                    "inclTax": 799.0,
+                                    "exclTax": 649.59,
+                                    "tax": 149.41,
+                                    "validFromDate": null,
+                                    "validToDate": null
+                                },
+                                "base": null,
+                                "upsell": null,
+                                "isFamilyItem": false,
+                                "priceType": null,
+                                "lowestPreviousPrice": null,
+                                "previousSalesPrice": null
+                            },
+                            "reference": {
+                                "regular": {
+                                    "perItem": {
+                                        "current": {
+                                            "inclTax": 799.0,
+                                            "exclTax": 649.59,
+                                            "tax": 149.41
+                                        },
+                                        "previous": null,
+                                        "lowestPrevious": null
+                                    },
+                                    "perUnit": null,
+                                    "changeType": null,
+                                    "constraints": null
+                                },
+                                "family": null,
+                                "preferences": {
+                                    "unitPrice": false
+                                }
+                            },
+                            "subtotal": {
+                                "current": {
+                                    "inclTax": 1598.0,
+                                    "exclTax": 1299.18,
+                                    "tax": 298.82
+                                },
+                                "upsell": null,
+                                "base": null,
+                                "savings": null
+                            }
+                        },
+                        "availabilityIndication": null,
+                        "minOrderQuantity": null
+                    }
+                ],
+                "plans": [],
+                "circularItems": [],
+                "price": {
+                    "totalPrice": {
+                        "current": {
+                            "inclTax": 1598.0,
+                            "exclTax": 1299.18,
+                            "tax": 298.82
+                        },
+                        "upsell": null,
+                        "base": null,
+                        "savings": null
+                    }
+                },
+                "quantity": 2
+            }
+        ],
+        "discountCodes": [],
+        "fulfilment": null,
+        "deliveryPrices": null,
+        "price": {
+            "totalPrice": {
+                "current": {
+                    "inclTax": 1598.0,
+                    "exclTax": 1299.18,
+                    "tax": 298.82
+                },
+                "product": {
+                    "current": {
+                        "inclTax": 1598.0,
+                        "exclTax": 1299.18,
+                        "tax": 298.82
+                    },
+                    "upsell": null,
+                    "base": null,
+                    "savings": null
+                },
+                "upsell": null,
+                "base": null,
+                "assemblyService": null,
+                "assemblyServiceOfPlans": null,
+                "removalServices": null,
+                "installationService": null,
+                "service": null,
+                "serviceByProvider": null,
+                "savings": null
+            },
+            "taxSummaries": [
+                {
+                    "taxType": "VAT",
+                    "totalTaxAmount": 298.82,
+                    "taxCode": null,
+                    "taxPercent": null
+                }
+            ],
+            "totalSavingsSummary": [],
+            "fees": null,
+            "proximityDiscounts": null,
+            "currency": "PLN"
+        },
+        "services": {
+            "assemblyService": {
+                "isAvailableForRU": true,
+                "isAnyItemEligibleForAssembly": true,
+                "isAvailableForPostCode": false,
+                "config": null,
+                "error": null
+            },
+            "removalServices": {
+                "isAnyItemEligibleForRemovalService": false,
+                "sofaRemovalService": {
+                    "isAvailableForRU": false,
+                    "isAvailableForPostCode": false,
+                    "config": null,
+                    "price": null,
+                    "eligibleItems": null,
+                    "quantity": null,
+                    "error": null
+                },
+                "mattressRemovalService": {
+                    "isAvailableForRU": false,
+                    "isAvailableForPostCode": false,
+                    "config": null,
+                    "price": null,
+                    "eligibleItems": null,
+                    "quantity": null,
+                    "error": null
+                },
+                "whiteGoodsRemovalService": {
+                    "isAvailableForRU": false,
+                    "isAvailableForPostCode": false,
+                    "config": null,
+                    "price": null,
+                    "eligibleItems": null,
+                    "quantity": null,
+                    "error": null
+                }
+            },
+            "installationService": {
+                "isAvailableForRU": false,
+                "isAnyItemEligibleForInstallation": false,
+                "isAvailableForPostCode": false,
+                "config": null,
+                "error": null
+            }
+        },
+        "quantity": 2.0,
+        "updatedAt": "2025-05-07T18:29:16.304Z"
+    }

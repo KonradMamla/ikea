@@ -2,7 +2,7 @@ import ProductPage from '../../pages/ProductPage';
 import CartPage from '../../pages/CartPage';
 import products from '../../fixtures/products';
 
-describe('Cart and Checkout – product management and order placement', () => {
+describe('Cart – Add product', () => {
   beforeEach(() => {
     cy.setConsentCookies();
     ProductPage.goToProductPage()

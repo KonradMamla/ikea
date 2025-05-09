@@ -1,7 +1,3 @@
-Cypress.Commands.add('setConsentCookies', () => {
-  cy.fixture('consent').then((cookies: Record<string, string>) => {
-    Object.entries(cookies).forEach(([name, value]) => {
-      cy.setCookie(name, value);
-    });
-  });
-});
+import './custom-commands/cart';
+import './custom-commands/consent';
+import './custom-commands/uncaught';

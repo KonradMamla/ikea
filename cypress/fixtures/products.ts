@@ -1,4 +1,11 @@
 const products = [
+// Product data used in mocked cart responses
+{
+    productID: 's19241207',
+    productName: 'SONGESAND',
+    productDescription: 'Rama łóżka z 2 pojemnikami, biały',
+    expectedPrice: '799'
+  },
   {
     productID: 's09545271',
     productName: 'VIMLE',

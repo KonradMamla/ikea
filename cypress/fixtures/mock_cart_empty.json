@@ -1,0 +1,13 @@
+{
+  "empty": true,
+  "groups": [],
+  "price": {
+    "totalPrice": {
+      "current": {
+        "inclTax": 0,
+        "exclTax": 0,
+        "tax": 0
+      }
+    }
+  }
+}
