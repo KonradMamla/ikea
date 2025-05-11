@@ -1,6 +1,6 @@
 # Cypress IKEA Automation Tests
 
-This repository contains Cypress test scripts for automating key functionalities of the IKEA e-commerce website [IKEA](https://www.ikea.com/pl/pl/).  
+This repository contains Cypress test scripts for automating key functionalities of the IKEA e-commerce website [IKEA](https://www.ikea.com/pl/pl/).
 
 The project is built using **[Cypress](https://www.cypress.io/)** with **[TypeScript](https://www.typescriptlang.org/)**, following a clean and maintainable structure based on the **Page Object Model (POM)**.  
 Test scenarios are written in a clear, action-driven style that simulates real **end-user interactions**.
@@ -12,9 +12,11 @@ Test scenarios are written in a clear, action-driven style that simulates real *
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Consent Cookie Setup](#consent-cookie-setup)
+- [Test Stabilization – Mocking API](#test-stabilization--mocking-api)
 - [Running Tests](#running-tests)
 - [Test Scenarios](#test-scenarios)
 - [Manual Test Cases](#manual-test-cases)
+- [Allure Reports](#allure-reports)
 - [Future Improvements](#future-improvements)
 - [Authors](#authors)
 - [License](#license)
@@ -73,11 +75,36 @@ This file is required to bypass the cookie banner and run tests without manual i
 ### How to get the `OptanonConsent` value?
 
 1. Open [https://www.ikea.com/pl/pl/](https://www.ikea.com/pl/pl/) in your browser.
-2. Open Developer Tools (`F12` or `Cmd + Option + I` on Mac).  
-3. Go to the **Application** tab.  
-4. In the sidebar, select **Cookies > https://www.ikea.com**.  
-5. Locate the cookie named **OptanonConsent**.  
+2. Open Developer Tools (`F12` or `Cmd + Option + I` on Mac).
+3. Go to the **Application** tab.
+4. In the sidebar, select **Cookies > https://www.ikea.com**.
+5. Locate the cookie named **OptanonConsent**.
 6. Copy its **entire value** and paste it into your `consent.json` file.
+
+---
+
+## Test stabilization – mocking API
+
+To ensure **reliable, fast, and isolated tests**, key cart-related scenarios are stabilized using **API mocking**.
+
+### Added custom Cypress commands
+
+| Command                    | Description                                               |
+| -------------------------- | --------------------------------------------------------- |
+| `mockCartWithOneProduct()` | Returns a cart with one predefined product                |
+| `mockRemoveItemFromCart()` | Simulates a successful product removal (`DELETE` request) |
+| `mockCartEmpty()`          | Returns an empty cart after item removal                  |
+
+### Purpose
+
+- Decouple test from real backend responses
+- Ensure deterministic test behavior regardless of API/server state
+- Speed up execution and eliminate flakiness in cart test `TC-CART-002`
+
+### Structure
+
+- **Mocks**: [`/cypress/fixtures/`](./cypress/fixtures/)
+- **Commands**: [`/cypress/support/commands/`](./cypress/support/commands/)
 
 ---
 
@@ -151,10 +178,50 @@ Manual test cases covering functional flows are available in:
 
 Includes:
 
-- Detailed step-by-step flows  
-- Preconditions and test data  
-- Expected results per step  
+- Detailed step-by-step flows
+- Preconditions and test data
+- Expected results per step
 - Status (e.g., automated / not automated)
+
+---
+
+## 📊 Allure Test Reports
+
+This project uses [Allure](https://docs.qameta.io/allure/) to generate advanced, interactive test reports for Cypress.
+
+### ✅ Features
+
+- Attachments: automatic screenshots on failure
+- Step-by-step logging via `cy.allure()`
+- Execution history and trend charts
+- Categorization by severity, tags, and status
+
+### 🧪 How to Use
+
+1. **Run tests with Allure:**
+
+   ```bash
+   npm run test:allure
+   ```
+
+Generate and open the report:
+
+```bash
+npm run report
+```
+
+### Output folders
+
+- `allure-results/` – raw test data + screenshots
+- `allure-report/` – generated HTML report
+
+### Execution History
+
+- Report history is preserved between test runs
+- Trend charts (flaky, broken, passed) are updated automatically
+- History is stored by copying `/allure-report/history` into `/allure-results` after each test run
+
+> Allure setup is already included in the repo: plugin config, scripts, and environment metadata.
 
 ---
 
@@ -163,22 +230,20 @@ Includes:
 - **CI/CD Integration**  
   Integrate the Cypress test suite with a CI/CD pipeline (e.g., GitHub Actions or Jenkins) to enable automated test execution on pull requests, merges, and deployments.
 
-- **Advanced Allure Reporting**  
-  Extend Allure reports with custom metadata, failure screenshots, environment info, and test history for improved debugging and visibility of test health over time.
-
-- **Improved Test Architecture**  
-  - Refactor Page Object Model (POM) to improve modularity and reusability.  
-  - Extract common logic into custom Cypress commands.  
-  - Ensure clean structure and maintainable code through separation of concerns.
-
 - **Expanded Test Coverage**  
-  Include additional scenarios for:  
-  - **User authentication flows**  
-  - **Full checkout paths** (e.g., delivery, store pickup)  
+  Include additional scenarios for:
+
+  - **User authentication flows**
+  - **Full checkout paths** (e.g., delivery, store pickup)
   - **Input validation and negative cases**
 
 - **API-Level Testing**  
   Add API tests (e.g., search, cart, order endpoints) to validate backend logic and reduce dependency on UI for critical paths.
+
+  - **Improved Test Architecture**
+  - Refactor Page Object Model (POM) to improve modularity and reusability.
+  - Extract common logic into custom Cypress commands.
+  - Ensure clean structure and maintainable code through separation of concerns.
 
 ---
 
@@ -193,5 +258,3 @@ Includes:
 This project is licensed under the **MIT License** – see the [LICENSE.md](LICENSE.md) file for details.
 
 ---
-
-

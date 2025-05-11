@@ -1,4 +1,5 @@
 import { defineConfig } from 'cypress';
+import allureWriter from '@shelex/cypress-allure-plugin/writer';
 
 export default defineConfig({
   e2e: {
@@ -6,9 +7,8 @@ export default defineConfig({
     specPattern: 'cypress/e2e/**/*.spec.ts',
     supportFile: 'cypress/support/e2e.ts',
 
-    async setupNodeEvents(on, config) {
-      const allureWriter = await import('@shelex/cypress-allure-plugin/writer');
-      allureWriter.default(on, config);
+    setupNodeEvents(on, config) {
+      allureWriter(on, config);
 
       on('task', {
         log(message) {
@@ -22,9 +22,10 @@ export default defineConfig({
 
     viewportWidth: 1280,
     viewportHeight: 720,
-    video: true,
+    video: false,
+    screenshotOnRunFailure: true,
     retries: {
-      runMode: 2,
+      runMode: 0,
       openMode: 0
     },
     env: {

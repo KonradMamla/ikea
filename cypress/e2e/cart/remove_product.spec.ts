@@ -12,6 +12,8 @@ describe('Cart – Remove product from cart', () => {
 
   it('Should remove the product from the cart and show an empty state', () => {
     cy.allure()
+      .epic('Cart & Checkout')
+      .feature('Remove product')
       .description('Verify user can remove a product from cart and see empty state.')
       .tag('cart', 'checkout')
       .severity('critical');

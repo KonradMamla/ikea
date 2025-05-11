@@ -11,6 +11,8 @@ describe('Cart – Add product', () => {
   products.forEach(({ productID, productName, productDescription, expectedPrice }) => {
       it(`Should add ${productName} ${productDescription} by productID to the cart and verify its price`, () => {
         cy.allure()
+          .epic('Cart & Checkout')
+          .feature('Add product')
           .description('Verify that a product added by productID appears in the cart with correct price.')
           .tag('cart', 'checkout')
           .severity('critical');
