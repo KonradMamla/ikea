@@ -16,7 +16,7 @@ Test scenarios are written in a clear, action-driven style that simulates real *
 - [Running Tests](#running-tests)
 - [Test Scenarios](#test-scenarios)
 - [Manual Test Cases](#manual-test-cases)
-- [Allure Reports](#allure-reports)
+- [Allure Test Reports](#allure-test-reports)
 - [Future Improvements](#future-improvements)
 - [Authors](#authors)
 - [License](#license)
@@ -185,18 +185,18 @@ Includes:
 
 ---
 
-## 📊 Allure Test Reports
+## Allure Test Reports
 
 This project uses [Allure](https://docs.qameta.io/allure/) to generate advanced, interactive test reports for Cypress.
 
-### ✅ Features
+### Features
 
 - Attachments: automatic screenshots on failure
 - Step-by-step logging via `cy.allure()`
 - Execution history and trend charts
 - Categorization by severity, tags, and status
 
-### 🧪 How to Use
+### How to Use
 
 1. **Run tests with Allure:**
 
