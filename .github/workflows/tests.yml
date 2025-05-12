@@ -9,6 +9,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      CONSENT_COOKIE_JSON: ${{ secrets.CONSENT_COOKIE_JSON }}
 
     steps:
       - name: Checkout repo

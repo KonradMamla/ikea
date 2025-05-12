@@ -1,5 +1,6 @@
 import { defineConfig } from 'cypress';
 import allureWriter from '@shelex/cypress-allure-plugin/writer.js';
+import 'dotenv/config';
 
 export default defineConfig({
   e2e: {
@@ -28,9 +29,12 @@ export default defineConfig({
       runMode: 0,
       openMode: 0
     },
+
     env: {
       allure: true,
-      allureResultsPath: 'allure-results'
+      allureResultsPath: 'allure-results',
+      
+      CONSENT_COOKIE_JSON: process.env.CONSENT_COOKIE_JSON,
     }
   }
 });
