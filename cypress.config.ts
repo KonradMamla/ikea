@@ -1,5 +1,5 @@
 import { defineConfig } from 'cypress';
-import allureWriter from '@shelex/cypress-allure-plugin/writer';
+import allureWriter from '@shelex/cypress-allure-plugin/writer.js';
 
 export default defineConfig({
   e2e: {
