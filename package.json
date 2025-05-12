@@ -11,7 +11,7 @@
     "format": "prettier --write cypress/**/*.ts",
     "test:allure": "rm -rf allure-report && node scripts/writeEnv.js && cypress run",
     "posttest": "cp -R allure-report/history allure-results || true",
-    "report": "allure generate allure-results --history --output allure-report && allure open",
+    "report": "allure generate allure-results --history --output allure-report",
     "report:clean": "rm -rf allure-results"
   },
   "keywords": [],
