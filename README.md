@@ -4,6 +4,7 @@ This repository contains Cypress test scripts for automating key functionalities
 
 The project is built using **[Cypress](https://www.cypress.io/)** with **[TypeScript](https://www.typescriptlang.org/)**, following a clean and maintainable structure based on the **Page Object Model (POM)**.  
 Test scenarios are written in a clear, action-driven style that simulates real **end-user interactions**.
+The test suite is fully integrated with a **CI/CD pipeline (GitHub Actions)** to automatically run tests on pull requests, merges, and deployments.
 
 ---
 
@@ -17,6 +18,7 @@ Test scenarios are written in a clear, action-driven style that simulates real *
 - [Test Scenarios](#test-scenarios)
 - [Manual Test Cases](#manual-test-cases)
 - [Allure Test Reports](#allure-test-reports)
+- [CI/CD Integration – GitHub Actions](#cicd-integration--github-actions)
 - [Future Improvements](#future-improvements)
 - [Authors](#authors)
 - [License](#license)
@@ -56,7 +58,11 @@ Before running the tests, ensure you have the following prerequisites installed:
 
 ## Consent Cookie Setup
 
-Before running the tests, you need to create the file:
+Before running the tests, you need to ensure IKEA's cookie banner is bypassed by setting valid consent cookies.
+
+### Option 1 – Local file (recommended for local runs)
+
+Create the file:
 
 `cypress/fixtures/consent.json`
 
@@ -70,8 +76,6 @@ With the following content:
 }
 ```
 
-This file is required to bypass the cookie banner and run tests without manual interaction.
-
 ### How to get the `OptanonConsent` value?
 
 1. Open [https://www.ikea.com/pl/pl/](https://www.ikea.com/pl/pl/) in your browser.
@@ -81,9 +85,31 @@ This file is required to bypass the cookie banner and run tests without manual i
 5. Locate the cookie named **OptanonConsent**.
 6. Copy its **entire value** and paste it into your `consent.json` file.
 
+### Option 2 – GitHub Actions Secret (for CI/CD)
+
+To run tests in CI, store the same consent data in a GitHub secret.
+
+1. Go to **Settings → Secrets → Actions**
+2. Add a new secret named `CONSENT_COOKIE_JSON`
+3. Paste the full cookie data as a JSON string:
+
+```json
+{
+  "OptanonConsent": "your-real-value",
+  "OptanonAlertBoxClosed": "true",
+  "ikea_cookieconsent_pl": "PL"
+}
+```
+
+This secret will be injected into your tests via the `Cypress.env('CONSENT_COOKIE_JSON')` environment variable.
+
+> **Only one method is required.**  
+> If the `CONSENT_COOKIE_JSON` secret is present, it will be used in **CI**.  
+> For **local development**, the `consent.json` file is sufficient.
+
 ---
 
-## Test stabilization – mocking API
+## Test Stabilization – Mocking API
 
 To ensure **reliable, fast, and isolated tests**, key cart-related scenarios are stabilized using **API mocking**.
 
@@ -181,7 +207,7 @@ Includes:
 - Detailed step-by-step flows
 - Preconditions and test data
 - Expected results per step
-- Status (e.g., automated / not automated)
+- Status (e.g., Automated / Not Automated)
 
 ---
 
@@ -225,19 +251,60 @@ npm run report
 
 ---
 
+## CI/CD Integration – GitHub Actions
+
+The test suite is integrated with **GitHub Actions** and runs automatically on every push and pull request to the `main` branch.
+
+### What’s included
+
+- Installs dependencies
+- Runs Cypress tests with Allure reporting
+- Generates the Allure report
+- Uploads the report as an artifact
+- Optionally deploys the report to GitHub Pages
+
+### Configuration
+
+GitHub Actions workflow is defined in:  
+`.github/workflows/tests.yml`
+
+Make sure your repository contains the following:
+
+- `CONSENT_COOKIE_JSON` secret added under **Settings → Secrets and variables → Actions**
+- GitHub Pages is enabled (Settings → Pages → Deploy from `main` branch, root folder)
+- Test scripts `test:allure` and `report` are defined in `package.json`
+
+### Required secret
+
+> `CONSENT_COOKIE_JSON`  
+> Contains the JSON string with cookie consent values.  
+> This allows Cypress to skip the IKEA cookie banner during test runs.
+
+Example value (stored securely in GitHub Secrets):
+
+```json
+{"OptanonConsent":"your-real-value","OptanonAlertBoxClosed":"true","ikea_cookieconsent_pl":"PL"}
+```
+
+### Access the Report Online
+
+If **GitHub Pages** is enabled, the **Allure test report** will be available at:
+
+`https://<your-username>.github.io/<repository-name>/`
+
+> Replace `<your-username>` and `<repository-name>` with your actual GitHub username and repository name.
+
+---
+
 ## Future Improvements
 
-- **CI/CD Integration**  
-  Integrate the Cypress test suite with a CI/CD pipeline (e.g., GitHub Actions or Jenkins) to enable automated test execution on pull requests, merges, and deployments.
-
-- **Expanded Test Coverage**  
+- **Expanded Test Coverage**
   Include additional scenarios for:
-
   - **User authentication flows**
   - **Full checkout paths** (e.g., delivery, store pickup)
   - **Input validation and negative cases**
 
-- **API-Level Testing**  
+- **API-Level Testing**
   Add API tests (e.g., search, cart, order endpoints) to validate backend logic and reduce dependency on UI for critical paths.
 
   - **Improved Test Architecture**
