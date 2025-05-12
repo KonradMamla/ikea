@@ -27,6 +27,9 @@ jobs:
       - name: Run Cypress tests (Allure)
         run: npm run test:allure
 
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline --save-dev
+
       - name: Generate Allure report
         run: |
           npm run report || echo "Ignore failures"
