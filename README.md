@@ -324,4 +324,5 @@ If **GitHub Pages** is enabled, the **Allure test report** will be available at:
 
 This project is licensed under the **MIT License** – see the [LICENSE.md](LICENSE.md) file for details.
 
+
 ---
