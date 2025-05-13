@@ -43,15 +43,9 @@ jobs:
       - name: 🧪 Debug allure-report contents
         run: ls -la allure-report
 
-      - name: 📁 Upload Allure report artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
-
-      - name: ✅ Add .nojekyll to prevent Jekyll processing
+      - name: 📁 Add .nojekyll file
         run: touch allure-report/.nojekyll
-  
+
       - name: 📤 Deploy Allure report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
@@ -60,3 +54,4 @@ jobs:
           publish_dir: allure-report
           publish_branch: gh-pages
           destination_dir: .
+          keep_files: true
