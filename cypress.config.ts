@@ -33,7 +33,6 @@ export default defineConfig({
     env: {
       allure: true,
       allureResultsPath: 'allure-results',
-      
       CONSENT_COOKIE_JSON: process.env.CONSENT_COOKIE_JSON,
     }
   }
