@@ -13,28 +13,37 @@ jobs:
       CONSENT_COOKIE_JSON: ${{ secrets.CONSENT_COOKIE_JSON }}
 
     steps:
-      - name: Checkout repo
+      - name: 📥 Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: ⚙️ Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: npm ci
 
-      - name: Run Cypress tests (Allure)
-        run: npm run test:allure
+      - name: 🧪 Run Cypress tests (Allure)
+        run: |
+          npm run test:allure
+          echo "Sleeping for 5s to ensure allure-results is written..."
+          sleep 5
 
-      - name: Install Allure CLI
+      - name: 🧩 Debug allure-results contents
+        run: ls -la allure-results
+
+      - name: 🛠️ Install Allure CLI
         run: npm install -g allure-commandline --save-dev
 
-      - name: Generate Allure report
+      - name: 📊 Generate Allure report
         run: |
           npm run report || echo "Ignore failures"
 
-      - name: Upload Allure report artifact
+      - name: 🧪 Debug allure-report contents
+        run: ls -la allure-report
+
+      - name: 📁 Upload Allure report artifact
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
