@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"e0b7844258335c8c9641bb17ce989133","name":"Cart – Add product","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}},{"uid":"50b745d19305e7826faad35114a695c4","name":"Cart – Remove product from cart","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
