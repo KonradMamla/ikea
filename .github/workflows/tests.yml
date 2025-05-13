@@ -49,6 +49,9 @@ jobs:
           name: allure-report
           path: allure-report
 
+      - name: ✅ Add .nojekyll to prevent Jekyll processing
+        run: touch allure-report/.nojekyll
+  
       - name: 📤 Deploy Allure report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
