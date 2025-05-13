@@ -18,6 +18,7 @@ The test suite is fully integrated with a **CI/CD pipeline (GitHub Actions)** to
 - [Test Scenarios](#test-scenarios)
 - [Manual Test Cases](#manual-test-cases)
 - [Allure Test Reports](#allure-test-reports)
+  - [View Report](https://konradmamla.github.io/ikea/)
 - [CI/CD Integration – GitHub Actions](#cicd-integration--github-actions)
 - [Future Improvements](#future-improvements)
 - [Authors](#authors)
@@ -288,11 +289,11 @@ Example value (stored securely in GitHub Secrets):
 
 ### Access the Report Online
 
-If **GitHub Pages** is enabled, the **Allure test report** will be available at:
+The latest **Allure test report** is automatically generated and available here:  
+[View Report](https://konradmamla.github.io/ikea/)  
+(Report updates after every successful run on `main` branch)
 
-`https://<your-username>.github.io/<repository-name>/`
-
-> Replace `<your-username>` and `<repository-name>` with your actual GitHub username and repository name.
+> Hosted via GitHub Pages from the `gh-pages` branch.
 
 ---
 
@@ -323,6 +324,5 @@ If **GitHub Pages** is enabled, the **Allure test report** will be available at:
 ## License
 
 This project is licensed under the **MIT License** – see the [LICENSE.md](LICENSE.md) file for details.
-
 
 ---
