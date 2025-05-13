@@ -4,8 +4,9 @@ import products from '../../fixtures/products';
 
 describe('Cart – Add product', () => {
   beforeEach(() => {
-    cy.setConsentCookies();
-    ProductPage.goToProductPage()
+    cy.setConsentCookies().then(() => {
+      ProductPage.goToProductPage();
+    });
   });
 
   products.forEach(({ productID, productName, productDescription, expectedPrice }) => {
